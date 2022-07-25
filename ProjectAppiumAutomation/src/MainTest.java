@@ -1,18 +1,15 @@
 import org.junit.Test;
 
-public class MainTest
-{
+public class MainTest extends CoreTestCase
+{   giveHelper Give = new giveHelper();
     int a = 10;
 
     @Test
     public void myFirstTest()
     {
-        a = this.giveMeNumber(12);
+        a = Give.giveMeNumber(12);
         System.out.println(a);
     }
 
-    public int giveMeNumber(int number)
-    {    
-    return number * 2 ;
-    }
+
 }
